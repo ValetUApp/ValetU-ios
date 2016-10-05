@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="lastCommentCell" rowHeight="183" id="KGk-i7-Jjw" customClass="LastCommentCell">
+            <rect key="frame" x="0.0" y="0.0" width="371" height="183"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="371" height="182"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Axq-de-O5N">
+                        <rect key="frame" x="18" y="7" width="35" height="35"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="35" id="Ohd-Yj-8Hp"/>
+                            <constraint firstAttribute="width" constant="35" id="mOI-Ke-cnt"/>
+                        </constraints>
+                        <state key="normal" backgroundImage="icChat.png"/>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="02/05/2016" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ys6-P1-kSB">
+                        <rect key="frame" x="281" y="15" width="72" height="18"/>
+                        <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="13"/>
+                        <color key="textColor" red="0.5725490196078431" green="0.5725490196078431" blue="0.5725490196078431" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="D2L-Jl-tld">
+                        <rect key="frame" x="19" y="181" width="333" height="1"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="Uf9-a2-Jbo"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="751" verticalHuggingPriority="751" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wN5-Nd-tSR">
+                        <rect key="frame" x="68" y="39" width="252" height="124"/>
+                        <string key="text">a asd  sfds asf adsf asdf asdf asdf asdf aewrwerfw4tq34targw54b  w5yw45adf wy5w46aes wq234t sfq34tqertjh ;piusdflwa lksdgfowg iurgoqiu4  liuwerliuwg oiutroiqwufpqu wuifp pef9 7q3pg</string>
+                        <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="13"/>
+                        <color key="textColor" red="0.57254901960000004" green="0.57254901960000004" blue="0.57254901960000004" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Most Recent Review" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ywQ-og-Xfr">
+                        <rect key="frame" x="68" y="15" width="131" height="19"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="19" id="wvn-rh-Cfm"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="14"/>
+                        <color key="textColor" red="0.25098039215686274" green="0.25098039215686274" blue="0.25098039215686274" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="wN5-Nd-tSR" firstAttribute="top" secondItem="ywQ-og-Xfr" secondAttribute="bottom" constant="5" id="0xn-Wx-Obo"/>
+                    <constraint firstAttribute="trailing" secondItem="wN5-Nd-tSR" secondAttribute="trailing" constant="51" id="5HJ-rJ-bub"/>
+                    <constraint firstAttribute="bottom" secondItem="D2L-Jl-tld" secondAttribute="bottom" id="Ar0-xR-44q"/>
+                    <constraint firstItem="wN5-Nd-tSR" firstAttribute="leading" secondItem="ywQ-og-Xfr" secondAttribute="leading" id="Gey-XG-vdt"/>
+                    <constraint firstItem="ywQ-og-Xfr" firstAttribute="leading" secondItem="Axq-de-O5N" secondAttribute="trailing" constant="15" id="IWw-8v-Pf3"/>
+                    <constraint firstItem="Ys6-P1-kSB" firstAttribute="centerY" secondItem="Axq-de-O5N" secondAttribute="centerY" id="NbW-4g-qB5"/>
+                    <constraint firstItem="D2L-Jl-tld" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="19" id="OkN-MK-51Z"/>
+                    <constraint firstItem="Ys6-P1-kSB" firstAttribute="leading" relation="lessThanOrEqual" secondItem="ywQ-og-Xfr" secondAttribute="trailing" priority="250" constant="107" id="VgL-eR-vPG"/>
+                    <constraint firstItem="D2L-Jl-tld" firstAttribute="top" secondItem="wN5-Nd-tSR" secondAttribute="bottom" constant="18" id="XdO-et-nQF"/>
+                    <constraint firstItem="Axq-de-O5N" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="7" id="ikB-LK-Mwg"/>
+                    <constraint firstItem="Axq-de-O5N" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="18" id="lLg-tr-LCB"/>
+                    <constraint firstAttribute="trailing" secondItem="D2L-Jl-tld" secondAttribute="trailing" constant="19" id="pQR-0n-HeK"/>
+                    <constraint firstItem="ywQ-og-Xfr" firstAttribute="centerY" secondItem="Axq-de-O5N" secondAttribute="centerY" id="r6Q-CY-3kb"/>
+                    <constraint firstAttribute="trailing" secondItem="Ys6-P1-kSB" secondAttribute="trailing" constant="18" id="uBA-Is-06T"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="lastReviewText" destination="wN5-Nd-tSR" id="lF2-kK-rki"/>
+                <outlet property="updatedAtlabel" destination="Ys6-P1-kSB" id="VKv-wP-EVy"/>
+            </connections>
+            <point key="canvasLocation" x="326.5" y="276.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="icChat.png" width="35" height="35"/>
+    </resources>
+</document>

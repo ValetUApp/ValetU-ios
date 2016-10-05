@@ -1,0 +1,29 @@
+
+source 'https://github.com/CocoaPods/Specs.git'
+use_frameworks!
+
+target ‘valetu’ do
+
+  	pod 'GooglePlaces'
+	pod 'GoogleMaps'
+	pod 'AFNetworking', '~> 3.0'
+	pod "SWNetworking"
+	pod 'MBProgressHUD'
+	pod 'ProgressHUD'
+	pod 'RNGridMenu'
+	pod 'DZNEmptyDataSet'
+	pod 'UberRides'
+	pod 'HCSStarRatingView', '~> 1.4.5'
+	pod 'SDWebImage', '~>3.8'
+	pod 'STPopup'
+	pod "GSKStretchyHeaderView"
+	pod 'Masonry'
+	pod 'FBSDKCoreKit'
+	pod 'FBSDKLoginKit'
+	pod 'FBSDKShareKit'
+	pod 'EAIntroView', '~> 2.9.0'
+  	pod 'SMPageControl', '~> 1.2'
+
+
+	pod 'Mixpanel'
+end

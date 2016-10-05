@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" initialViewController="01J-lp-oVM">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Llm-lL-Icb"/>
+                        <viewControllerLayoutGuide type="bottom" id="xb3-aO-Qok"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="360" height="640"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bgr_intro.png" translatesAutoresizingMaskIntoConstraints="NO" id="vbn-yK-CHJ">
+                                <rect key="frame" x="0.0" y="0.0" width="360" height="640"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ValetU" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Ff-Ir-g73">
+                                <rect key="frame" x="87" y="209" width="187" height="84"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="61"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="© 2016 ValetU.com" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v6O-fl-myK">
+                                <rect key="frame" x="108" y="422" width="145" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="MCe-WZ-yGs"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="16"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The best parking places for you" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iKF-eg-aun">
+                                <rect key="frame" x="66" y="293" width="229" height="55"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="229" id="ZvD-5I-SQu"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="vbn-yK-CHJ" secondAttribute="bottom" id="2z6-F6-lvq"/>
+                            <constraint firstItem="4Ff-Ir-g73" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" constant="209" id="K4K-6t-kJg"/>
+                            <constraint firstItem="iKF-eg-aun" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="VId-Tb-eVY"/>
+                            <constraint firstAttribute="trailing" secondItem="vbn-yK-CHJ" secondAttribute="trailing" id="aJ8-95-qe0"/>
+                            <constraint firstItem="4Ff-Ir-g73" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="crn-u3-rl4"/>
+                            <constraint firstItem="iKF-eg-aun" firstAttribute="top" secondItem="4Ff-Ir-g73" secondAttribute="bottom" id="eJa-q0-MOn"/>
+                            <constraint firstItem="v6O-fl-myK" firstAttribute="top" secondItem="iKF-eg-aun" secondAttribute="bottom" constant="74" id="fvZ-wd-tf7"/>
+                            <constraint firstItem="vbn-yK-CHJ" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="oqN-ZA-A3w"/>
+                            <constraint firstItem="v6O-fl-myK" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="srw-YD-boQ"/>
+                            <constraint firstItem="vbn-yK-CHJ" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="tam-S9-GGQ"/>
+                        </constraints>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="360" height="640"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="92" y="303"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="bgr_intro.png" width="360" height="640"/>
+    </resources>
+</document>

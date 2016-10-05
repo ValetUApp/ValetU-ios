@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="parkingCell" rowHeight="65" id="KGk-i7-Jjw" customClass="ParkingCell">
+            <rect key="frame" x="0.0" y="0.0" width="451" height="65"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="451" height="64"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icPlaceSmallGray.png" translatesAutoresizingMaskIntoConstraints="NO" id="hTu-rj-ovh">
+                        <rect key="frame" x="304" y="16" width="12" height="18"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="18" id="2X3-ip-bSG"/>
+                            <constraint firstAttribute="width" constant="12" id="Ofy-f9-Iz0"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="484 Windsor Ave" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WZG-rh-Us2">
+                        <rect key="frame" x="322" y="16" width="103" height="18"/>
+                        <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="13"/>
+                        <color key="textColor" red="0.5725490196078431" green="0.5725490196078431" blue="0.5725490196078431" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Last Parking" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vVN-pR-w0P">
+                        <rect key="frame" x="68" y="15" width="80" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="80" id="Y5N-wN-zz6"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="14"/>
+                        <color key="textColor" red="0.25098039215686274" green="0.25098039215686274" blue="0.25098039215686274" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zvK-sf-bMj">
+                        <rect key="frame" x="19" y="50" width="413" height="1"/>
+                        <color key="backgroundColor" red="0.96470588239999999" green="0.96470588239999999" blue="0.96470588239999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="oNJ-3d-Fee"/>
+                        </constraints>
+                    </view>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KFH-1T-hpu" customClass="CircleImageView">
+                        <rect key="frame" x="19" y="7" width="35" height="35"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="35" id="2nG-bn-vMc"/>
+                            <constraint firstAttribute="width" constant="35" id="HGM-ZC-ylw"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                <constraints>
+                    <constraint firstItem="vVN-pR-w0P" firstAttribute="centerY" secondItem="KFH-1T-hpu" secondAttribute="centerY" id="2cS-MS-psO"/>
+                    <constraint firstItem="hTu-rj-ovh" firstAttribute="leading" relation="lessThanOrEqual" secondItem="vVN-pR-w0P" secondAttribute="trailing" priority="250" constant="72" id="9Ud-yd-qla"/>
+                    <constraint firstItem="zvK-sf-bMj" firstAttribute="top" secondItem="KFH-1T-hpu" secondAttribute="bottom" constant="7" id="Br2-cO-Jc8"/>
+                    <constraint firstItem="KFH-1T-hpu" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="18" id="Maw-XY-6be"/>
+                    <constraint firstItem="WZG-rh-Us2" firstAttribute="centerY" secondItem="hTu-rj-ovh" secondAttribute="centerY" id="TLn-NQ-B5H"/>
+                    <constraint firstItem="hTu-rj-ovh" firstAttribute="centerY" secondItem="vVN-pR-w0P" secondAttribute="centerY" id="haD-YV-GpA"/>
+                    <constraint firstAttribute="trailing" secondItem="zvK-sf-bMj" secondAttribute="trailing" constant="19" id="iiB-OR-aGa"/>
+                    <constraint firstItem="zvK-sf-bMj" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="19" id="oWv-y4-LAj"/>
+                    <constraint firstItem="KFH-1T-hpu" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="7" id="tRA-6H-I5o"/>
+                    <constraint firstItem="WZG-rh-Us2" firstAttribute="leading" secondItem="hTu-rj-ovh" secondAttribute="trailing" constant="6" id="uA4-w1-mGG"/>
+                    <constraint firstItem="vVN-pR-w0P" firstAttribute="leading" secondItem="KFH-1T-hpu" secondAttribute="trailing" constant="15" id="wUi-83-nnv"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="WZG-rh-Us2" secondAttribute="trailing" constant="18" id="y1y-pu-A9J"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="parkingImage" destination="KFH-1T-hpu" id="ppy-cj-9SQ"/>
+                <outlet property="parkingTitle" destination="WZG-rh-Us2" id="PhN-xA-rsJ"/>
+            </connections>
+            <point key="canvasLocation" x="275.5" y="149.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="icPlaceSmallGray.png" width="12" height="18"/>
+    </resources>
+</document>
