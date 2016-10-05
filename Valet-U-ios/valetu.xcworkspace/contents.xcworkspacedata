@@ -2,12 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:/Users/imobile/Documents/valetu/ValetU.xcodeproj">
+      location = "group:ValetU.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:Pods/Pods.xcodeproj">
-   </FileRef>
-   <FileRef
-      location = "group:ValetU.xcodeproj">
    </FileRef>
 </Workspace>

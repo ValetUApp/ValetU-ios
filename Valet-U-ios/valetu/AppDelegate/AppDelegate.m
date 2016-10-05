@@ -30,14 +30,14 @@
     [UBSDKConfiguration setFallbackEnabled:YES];
     
     [FBSDKProfile enableUpdatesOnAccessTokenChange:YES];
-    [[FBSDKApplicationDelegate sharedInstance] application:application
-                             didFinishLaunchingWithOptions:launchOptions];
+    
         
     [Mixpanel sharedInstanceWithToken:MIX_PANEL_TOKEN];
     
     [self initVariables];
 
-    return YES;
+    return [[FBSDKApplicationDelegate sharedInstance] application:application
+                                    didFinishLaunchingWithOptions:launchOptions];
 }
 
 - (void) initVariables

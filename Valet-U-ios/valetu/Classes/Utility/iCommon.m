@@ -55,6 +55,9 @@
                                     if (error || result.isCancelled) {
                                         completion(result, NO, error.localizedDescription);
                                     } else {
+                                        
+                                        [FBSDKAccessToken setCurrentAccessToken:result.token];
+
                                         [iCommon setShouldSkipLogin:YES];
                                         [VUser sharedModel].profileId = [FBSDKAccessToken currentAccessToken].userID;
                                         completion(result, YES, nil);
@@ -87,6 +90,8 @@
                  completion(nil, NO, error.localizedDescription);
              }
          }];
+    } else {
+        completion(nil, NO, nil);
     }
 }
 
@@ -104,11 +109,12 @@
     } success:^(NSURLSessionDataTask *uploadTask, id responseObject) {
         NSLog(@"%@", responseObject);
         if ([[responseObject objectForKey:@"status"] isEqualToString:@"Ok"]) {
-             completion(YES, SUCCESS);
+            
             [VUser sharedModel].lastReview = [responseObject objectForKey:@"lastReview"];
             [VUser sharedModel].lastParking = [responseObject objectForKey:@"lastParking"];
             [VUser sharedModel].numberOfParkings = [responseObject objectForKey:@"numberOfParking"];
             [VUser sharedModel].numberOfReviews = [responseObject objectForKey:@"numberOfReviews"];
+            completion(YES, SUCCESS);
         } else
         {
             completion(NO, ERROR_LOGIN);
